@@ -72,14 +72,14 @@ $(document).ready(function () {
     $('.closebtn').click(function () {
         $('.sidebar').prop('style', 'width: 0');
         $('.recContent, .sideTitle').prop('style', 'filter: none');
-        $('.backdrop, .shounenRec, .shoujoRec, .comedyRec, .dramaRec, .romanceRec, .thrillerRec, .healingRec, .sportRec, .storyRec').hide();
+        $('.backdrop, .shounenRec, .shoujoRec, .comedyRec, .dramaRec, .romanceRec, .thrillerRec, .healingRec, .sportsRec, .storyRec').hide();
     });
     
     $(document).mouseup(function (e) {
         if ($(e.target).closest(".sidebar").length === 0) {
             $('.sidebar').prop('style', 'width: 0');
             $('.recContent, .sideTitle').prop('style', 'filter: none');
-            $('.backdrop, .shounenRec, .shoujoRec, .comedyRec, .dramaRec, .romanceRec, .thrillerRec, .healingRec, .sportRec, .storyRec').hide();
+            $('.backdrop, .shounenRec, .shoujoRec, .comedyRec, .dramaRec, .romanceRec, .thrillerRec, .healingRec, .sportsRec, .storyRec').hide();
         }
     });
 
