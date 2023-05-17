@@ -97,6 +97,7 @@ section {
     @media screen and (max-width: 768px) {
         padding: 0%;
         border: 0px solid #f1f1f1;
+        opacity: 1;
     }
 }
 
@@ -221,7 +222,7 @@ section {
     background-attachment: fixed;
 }
 
-.contact {
+.contact2 {
     background: linear-gradient(#00000080, #00000080), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/lake-696098_1920.jpg);
     background-size: cover;
     background-position: center center;
@@ -294,40 +295,186 @@ section {
         top: 90%;
     }
 }
-.bgGradient {
-    background-image: linear-gradient();
+
+.contactButton {
+    position: absolute;
+    top: 4.5vh;
+    right: 5vw;
+    z-index: 10;
+    cursor: pointer;
+    mix-blend-mode: difference;
+}
+.contactLine {
+    width: 50px;
+    height: 5px;
+    background-color: #a78b75;
+    border-radius: 1vh;
+    display: block;
+    margin: 8px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.contactButton.is-active .contactLine:nth-child(2) {
+    opacity: 0;
+}
+
+.contactButton.is-active .contactLine:nth-child(1) {
+    transform: translateY(13px) rotate(45deg);
+}
+
+.contactButton.is-active .contactLine:nth-child(3) {
+    transform: translateY(-13px) rotate(-45deg);
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 7vh;
+    right: 19vw;
+    opacity: 0;
+    transform: translate(20vw) scale(0);
+
+    @media screen and (max-width: 1279px) {
+        top: 7vh;
+        right: 27vw;
+    }
+
+    @media screen and (max-width: 768px) {
+        top: 25vh;
+        right: 10vw;
+    }
+}
+
+.contact.is-active {
+    opacity: 1;
+    transform: translate(0vw) scale(1);
+    transition: .5s ease-in-out;
+}
+
+.contact ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.contact ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.contact ul li a {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background: #AEC6CF;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #666;
+    transition: .5s;
+
+    @media screen and (max-width: 768px) {
+        margin-top: 10px;
+    }
+}
+
+.contact ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    border-radius: 50%;
+    background: #FAF9F6;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+
+.contact ul li a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #FAF9F6;
+}
+
+.contact ul li a:hover {
+    color: #FAF9F6;
+    box-shadow: 0 0 5px #FAF9F6;
+    text-shadow: 0 0 5px #FAF9F6;
+}
+
+.contact ul li a img {
+    filter: invert(1);
+    max-width: 30px;
+}
+
+.bgGradient {
+    background-image: linear-gradient(#FFFDD0, #AEC6CF);
+    width: 100%;
+    height: 120%;
     top: 0;
     left: 0;
     position: absolute;
+    @media screen and (max-width: 768px) {
+        height: 155%;
+    }
 }
+
 .sideTitle {
     position: absolute;
     margin-top: 20vh;
     margin-left: 10vw;
-    height: 75vh;
+    height: 100vh;
     width: 15vw;
-    color: #fff;
+    color: #222;
+
+    @media screen and (max-width: 768px) {
+        position: relative;
+        margin-top: 15vh;
+        margin-left: 15vw;
+        height: 25vh;
+        width: 70vw;
+    }
 }
+
 .sideBg {
     position: absolute;
-    background: #222;
+    background: #aec6cfa4;
+    border-radius: 1vh;
     width: 100%;
     height: 100%;
-    z-index: -1;
-    filter: blur(3px);
+    z-index: 0;
+    filter: blur(2px);
 }
 
 .recTitle {
+    position: relative;
     margin-top: 3vh;
+    margin-block: 3vh;
     text-align: center;
     font-size: 2em;
+    z-index: 2;
 }
 
 .directions {
-    text-align: center;
+    position: relative;
+    overflow-wrap: break-word;
+    margin-left: 2vw;
+    margin-right: 2vw;
     font-size: 1em;
+    z-index: 2;
 }
 
 .recContent {
@@ -336,6 +483,12 @@ section {
     margin-top: 20vh;
     display: flex;
     flex-wrap: wrap;
+
+    @media screen and (max-width: 768px) {
+        position: relative;
+        margin-left: 15vw;
+        margin-top: 5vh;
+    }
 }
 
 .genre {
@@ -346,12 +499,17 @@ section {
     margin-right: 15px;
     margin-bottom: 15px;
     cursor: pointer;
+    @media screen and (max-width: 768px) {
+        min-width: 70vw;
+        height: 10vh;
+    }
 }
 
 .genre:hover {
     box-shadow: 0 0 10px #fff;
-    transform: translatey(-1vh);
-    transition: .15s ease-in-out;
+    border-radius: 1vw;
+    transform: scale(1.07);
+    transition: .25s linear;
 }
 
 .imgCover {
@@ -366,8 +524,12 @@ section {
     align-items: center;
     color: #fff;
     bottom: 0;
-    width: 100%;
-    height: 5vh;
+    width: auto;
+    height: auto;
+    margin: 2vw;
+    @media screen and (max-width: 768px) {
+        font-size: 0.8em;
+    }
 }
 
 .backdrop {
@@ -387,11 +549,11 @@ section {
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #FAF9F6;
+    background-color: #aec6cff5;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    z-index: 5;
+    z-index: 99;
 }
 
 .sidebar .closebtn {
@@ -400,6 +562,17 @@ section {
     left: 25px;
     font-size: 36px;
     cursor: pointer;
+}
+
+.sidebarTitle {
+    position: absolute;
+    top: 5vh;
+    right: 3vw;
+    font-weight: 600;
+    color: #222;
+    @media screen and (max-width: 768px) {
+        font-size: 0.8em;
+    }
 }
 
 .shounenRec,
@@ -413,9 +586,12 @@ section {
 .storyRec {
     display: none;
     position: relative;
-    height: 10vw;
+    height: 20vh;
     background: #222;
-    margin: 15px;
+    margin: 2vw;
+    @media screen and (max-width: 768px) {
+        min-width: 30vw;
+    }
 }
 
 .shounen .imgCover {

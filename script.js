@@ -19,52 +19,53 @@ $(document).ready(function () {
         })
     });
 
+    $('.contactButton').click(function () {
+        $(this).toggleClass('is-active');
+        $('.contact').toggleClass('is-active');
+    });
 
     $('.shounen').click(function () {
-        $('.sidebar').prop('style', 'width: 30vw');
+        $('.sidebar').prop('style', 'width: 40vw');
         $('.recContent, .sideTitle').prop('style', 'filter: blur(3px)');
         $('.backdrop, .shounenRec').show();
     });
-
     $('.shoujo').click(function () {
-        $('.sidebar').prop('style', 'width: 30vw');
+        $('.sidebar').prop('style', 'width: 40vw');
         $('.recContent, .sideTitle').prop('style', 'filter: blur(3px)');
         $('.backdrop, .shoujoRec').show();
     });
-
     $('.comedy').click(function () {
-        $('.sidebar').prop('style', 'width: 30vw');
+        $('.sidebar').prop('style', 'width: 40vw');
         $('.recContent, .sideTitle').prop('style', 'filter: blur(3px)');
         $('.backdrop, .comedyRec').show();
     });
     $('.drama').click(function () {
-        $('.sidebar').prop('style', 'width: 30vw');
+        $('.sidebar').prop('style', 'width: 40vw');
         $('.recContent, .sideTitle').prop('style', 'filter: blur(3px)');
         $('.backdrop, .dramaRec').show();
     });
     $('.romance').click(function () {
-        $('.sidebar').prop('style', 'width: 30vw');
+        $('.sidebar').prop('style', 'width: 40vw');
         $('.recContent, .sideTitle').prop('style', 'filter: blur(3px)');
         $('.backdrop, .romanceRec').show();
     });
-    
     $('.thriller').click(function () {
-        $('.sidebar').prop('style', 'width: 30vw');
+        $('.sidebar').prop('style', 'width: 40vw');
         $('.recContent, .sideTitle').prop('style', 'filter: blur(3px)');
         $('.backdrop, .thrillerRec').show();
     });
     $('.healing').click(function () {
-        $('.sidebar').prop('style', 'width: 30vw');
+        $('.sidebar').prop('style', 'width: 40vw');
         $('.recContent, .sideTitle').prop('style', 'filter: blur(3px)');
         $('.backdrop, .healingRec').show();
     });
     $('.sports').click(function () {
-        $('.sidebar').prop('style', 'width: 30vw');
+        $('.sidebar').prop('style', 'width: 40vw');
         $('.recContent, .sideTitle').prop('style', 'filter: blur(3px)');
         $('.backdrop, .sportsRec').show();
     });
     $('.story').click(function () {
-        $('.sidebar').prop('style', 'width: 30vw');
+        $('.sidebar').prop('style', 'width: 40vw');
         $('.recContent, .sideTitle').prop('style', 'filter: blur(3px)');
         $('.backdrop, .storyRec').show();
     });
@@ -74,7 +75,7 @@ $(document).ready(function () {
         $('.recContent, .sideTitle').prop('style', 'filter: none');
         $('.backdrop, .shounenRec, .shoujoRec, .comedyRec, .dramaRec, .romanceRec, .thrillerRec, .healingRec, .sportsRec, .storyRec').hide();
     });
-    
+
     $(document).mouseup(function (e) {
         if ($(e.target).closest(".sidebar").length === 0) {
             $('.sidebar').prop('style', 'width: 0');
