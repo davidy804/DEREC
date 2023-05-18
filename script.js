@@ -10,7 +10,7 @@ $(document).ready(function () {
             });
         }, function () {
             $(this).find('.flex-title').css({
-                transform: 'rotate(90deg)',
+                transform: 'rotate(-90deg)',
                 top: '15%'
             });
             $(this).find('.flex-about').css({
@@ -44,6 +44,11 @@ $(document).ready(function () {
         $('.recContent, .sideTitle').prop('style', 'filter: blur(3px)');
         $('.backdrop, .dramaRec').show();
     });
+    $('.episodic').click(function () {
+        $('.sidebar').prop('style', 'width: 40vw');
+        $('.recContent, .sideTitle').prop('style', 'filter: blur(3px)');
+        $('.backdrop, .episodicRec').show();
+    });
     $('.romance').click(function () {
         $('.sidebar').prop('style', 'width: 40vw');
         $('.recContent, .sideTitle').prop('style', 'filter: blur(3px)');
@@ -59,28 +64,28 @@ $(document).ready(function () {
         $('.recContent, .sideTitle').prop('style', 'filter: blur(3px)');
         $('.backdrop, .healingRec').show();
     });
+    $('.adventure').click(function () {
+        $('.sidebar').prop('style', 'width: 40vw');
+        $('.recContent, .sideTitle').prop('style', 'filter: blur(3px)');
+        $('.backdrop, .adventureRec').show();
+    });
     $('.sports').click(function () {
         $('.sidebar').prop('style', 'width: 40vw');
         $('.recContent, .sideTitle').prop('style', 'filter: blur(3px)');
         $('.backdrop, .sportsRec').show();
     });
-    $('.story').click(function () {
-        $('.sidebar').prop('style', 'width: 40vw');
-        $('.recContent, .sideTitle').prop('style', 'filter: blur(3px)');
-        $('.backdrop, .storyRec').show();
-    });
 
     $('.closebtn').click(function () {
         $('.sidebar').prop('style', 'width: 0');
         $('.recContent, .sideTitle').prop('style', 'filter: none');
-        $('.backdrop, .shounenRec, .shoujoRec, .comedyRec, .dramaRec, .romanceRec, .thrillerRec, .healingRec, .sportsRec, .storyRec').hide();
+        $('.backdrop, .shounenRec, .shoujoRec, .comedyRec, .dramaRec, .episodicRec, .romanceRec, .thrillerRec, .healingRec, .adventureRec, .sportsRec').hide();
     });
 
     $(document).mouseup(function (e) {
         if ($(e.target).closest(".sidebar").length === 0) {
             $('.sidebar').prop('style', 'width: 0');
             $('.recContent, .sideTitle').prop('style', 'filter: none');
-            $('.backdrop, .shounenRec, .shoujoRec, .comedyRec, .dramaRec, .romanceRec, .thrillerRec, .healingRec, .sportsRec, .storyRec').hide();
+            $('.backdrop, .shounenRec, .shoujoRec, .comedyRec, .dramaRec, .episodicRec, .romanceRec, .thrillerRec, .healingRec, .adventureRec, .sportsRec').hide();
         }
     });
 
