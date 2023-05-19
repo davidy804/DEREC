@@ -212,6 +212,41 @@ section {
     }
 }
 
+.fav1 {
+    background: linear-gradient(#00000080, #00000080), url(/images/fav1.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.fav2 {
+    background: linear-gradient(#00000080, #00000080), url(/images/fav2.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.fav3 {
+    background: linear-gradient(#00000080, #00000080), url(/images/fav3.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.fav4 {
+    background: linear-gradient(#00000080, #00000080), url(/images/fav4.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.fav5 {
+    background: linear-gradient(#00000080, #00000080), url(/images/fav5.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
 .about {
     background: linear-gradient(#00000080, #00000080), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/beach-2089959_1280.jpg);
     background-size: cover;
@@ -434,9 +469,9 @@ section {
 .sideTitle {
     position: absolute;
     margin-top: 20vh;
-    margin-left: 10vw;
+    margin-left: 5vw;
     height: 100vh;
-    width: 15vw;
+    width: 20vw;
     color: #222;
 
     @media screen and (max-width: 768px) {
@@ -465,11 +500,12 @@ section {
     text-align: center;
     font-size: 2em;
     z-index: 2;
+
     @media screen and (max-width: 1200px) {
         margin-block: 1vh;
-        font-weight: 500;
-        font-size: 1.4em;
+        font-size: 1.6em;
     }
+
     @media screen and (max-width: 768px) {
         margin-block: 0;
         font-size: 1.5em;
@@ -483,6 +519,7 @@ section {
     margin-right: 2vw;
     font-size: 1em;
     z-index: 2;
+
     @media screen and (max-width: 1200px) {
         font-size: .9em;
     }
@@ -527,6 +564,7 @@ section {
 .imgCover {
     position: relative;
     height: 100%;
+    background-position: center center;
 }
 
 .description {
@@ -600,9 +638,10 @@ section {
 .episodicRec,
 .romanceRec,
 .thrillerRec,
-.healingRec,
-.adventureRec,
-.sportsRec {
+.fantasyRec,
+.scifiRec,
+.sportsRec,
+.healingRec {
     display: none;
     position: relative;
     height: 20vh;
@@ -644,6 +683,18 @@ section {
     background-repeat: no-repeat;
 }
 
+.shounen5 {
+    background: url('images/dgrayman.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.shounen6 {
+    background: url('images/myhero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .shoujo .imgCover {
     background: url('images/shoujo.png');
     background-size: cover;
@@ -676,6 +727,12 @@ section {
 
 .comedy2 {
     background: url('images/asobiasobase.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.comedy3 {
+    background: url('images/loveiswar.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -806,38 +863,38 @@ section {
     background-repeat: no-repeat;
 }
 
-.healing .imgCover {
-    background: url('images/healing.png');
+.fantasy .imgCover {
+    background: url('images/fantasy.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.healing1 {
-    background: url('images/111.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.healing2 {
-    background: url('images/222.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.adventure .imgCover {
-    background: url('images/adventure.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.adventure1 {
+.fantasy1 {
     background: url('images/madeinabyss.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.adventure2 {
+.fantasy2 {
     background: url('images/joblessreincarnation.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.scifi .imgCover {
+    background: url('images/scifi.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.scifi1 {
+    background: url('images/86.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.scifi2 {
+    background: url('images/cyberpunk.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -856,6 +913,24 @@ section {
 
 .sports2 {
     background: url('images/pingpong.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.healing .imgCover {
+    background: url('images/healing.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.healing1 {
+    background: url('images/nonnonbiyori.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.healing2 {
+    background: url('images/222.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
