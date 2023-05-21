@@ -104,7 +104,7 @@ section {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    cursor: pointer;
+    cursor: default;
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
@@ -135,10 +135,9 @@ section {
 
 .home {
     height: 90vh;
-    background: linear-gradient(#00000080, #00000080), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/lake-macquarie-71208_1920.jpg);
+    background: linear-gradient(#00000080, #00000080), url(images/homefav.jpg);
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
 
     @media screen and (min-width: 768px) {
         animation: aboutFlexSlide $defaultSeconds 1;
@@ -213,38 +212,33 @@ section {
 }
 
 .fav1 {
-    background: linear-gradient(#00000080, #00000080), url(/images/fav1.png);
+    background: linear-gradient(#00000080, #00000080), url(images/rakugo.jpg);
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
 }
 
 .fav2 {
-    background: linear-gradient(#00000080, #00000080), url(/images/fav2.png);
+    background: linear-gradient(#00000080, #00000080), url(images/violetevergarden.jpg);
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
 }
 
 .fav3 {
-    background: linear-gradient(#00000080, #00000080), url(/images/fav3.png);
+    background: linear-gradient(#00000080, #00000080), url(images/hunterxhunter.jpg);
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
 }
 
 .fav4 {
-    background: linear-gradient(#00000080, #00000080), url(/images/fav4.png);
+    background: linear-gradient(#00000080, #00000080), url(images/clannad.jpg);
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
 }
 
 .fav5 {
-    background: linear-gradient(#00000080, #00000080), url(/images/fav5.png);
+    background: linear-gradient(#00000080, #00000080), url(images/monster.jpg);
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
 }
 
 .about {
@@ -462,7 +456,7 @@ section {
     position: absolute;
 
     @media screen and (max-width: 768px) {
-        height: 170%;
+        height: 240%;
     }
 }
 
@@ -508,7 +502,7 @@ section {
 
     @media screen and (max-width: 768px) {
         margin-block: 0;
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 }
 
@@ -522,6 +516,9 @@ section {
 
     @media screen and (max-width: 1200px) {
         font-size: .9em;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: .7em;
     }
 }
 
@@ -550,11 +547,11 @@ section {
 
     @media screen and (max-width: 768px) {
         min-width: 70vw;
-        height: 10vh;
+        height: 15vh;
     }
 }
 
-.genre:hover {
+.imgCover:hover {
     box-shadow: 0 0 10px #fff;
     border-radius: 1vw;
     transform: scale(1.07);
@@ -572,11 +569,35 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #22222270;
     color: #fff;
+    font-size: 1.2em;
     bottom: 0;
     width: auto;
     height: auto;
     margin: 2vw;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 0.8em;
+    }
+}
+
+.descriptionRec {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #22222270;
+    color: #fff;
+    font-size: 1.2em;
+    top: 0;
+    width: auto;
+    height: auto;
+    margin: 2vw;
+    padding-left: 5px;
+    padding-right: 5px;
 
     @media screen and (max-width: 768px) {
         font-size: 0.8em;
@@ -654,165 +675,187 @@ section {
 }
 
 .shounen .imgCover {
-    background: url('images/shounen.png');
+    background: url('images/shounen.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .shounen1 {
-    background: url('images/vinlandsaga.png');
+    background: url('images/vinlandsaga.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .shounen2 {
-    background: url('images/jujutsukaisen.png');
+    background: url('images/jujutsukaisen.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .shounen3 {
-    background: url('images/hunterxhunter.png');
+    background: url('images/hunterxhunter2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .shounen4 {
-    background: url('images/fmab.png');
+    background: url('images/fmab.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .shounen5 {
-    background: url('images/dgrayman.png');
+    background: url('images/dgrayman.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .shounen6 {
-    background: url('images/myhero.png');
+    background: url('images/myhero.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .shoujo .imgCover {
-    background: url('images/shoujo.png');
+    background: url('images/shoujo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .shoujo1 {
-    background: url('images/fruitsbasket.png');
+    background: url('images/fruitsbasket.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .shoujo2 {
-    background: url('images/hostclub.png');
+    background: url('images/yona.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    @media screen and (max-width: 768px) {
+        background-position: center;
+    }
 }
 
 .comedy .imgCover {
-    background: url('images/comedy.png');
+    background: url('images/comedy.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .comedy1 {
-    background: url('images/gintama.png');
+    background: url('images/gintama.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .comedy2 {
-    background: url('images/asobiasobase.png');
+    background: url('images/asobi.png');
     background-size: cover;
     background-repeat: no-repeat;
+    @media screen and (max-width: 768px) {
+        background-position: center;
+    }
 }
 
 .comedy3 {
-    background: url('images/loveiswar.png');
+    background: url('images/loveiswar.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .drama .imgCover {
-    background: url('images/drama.png');
+    background: url('images/drama.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .drama1 {
-    background: url('images/rakugo.png');
+    background: url('images/rakugo2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .drama2 {
-    background: url('images/clannad.png');
+    background: url('images/clannad2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .drama3 {
-    background: url('images/haibanerenmei.png');
+    background: url('images/haibanerenmei.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    @media screen and (max-width: 768px) {
+        background-position: center;
+    }
 }
 
 .drama4 {
-    background: url('images/heike.png');
+    background: url('images/heike.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .episodic .imgCover {
-    background: url('images/episodic.png');
+    background: url('images/episodic.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .episodic1 {
-    background: url('images/violetevergarden.png');
+    background: url('images/violetevergarden2.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .episodic2 {
-    background: url('images/kinosjourney.png');
+    background: url('images/kinosjourney.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .episodic3 {
-    background: url('images/mushishi.png');
+    background: url('images/mushishi.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .episodic4 {
-    background: url('images/mononokei.png');
+    background: url('images/mononoke.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .romance .imgCover {
-    background: url('images/romance.png');
+    background: url('images/romance.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .romance1 {
-    background: url('images/tsurezurechildren.png');
+    background: url('images/tsurezurechildren.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .romance2 {
-    background: url('images/scumswish.png');
+    background: url('images/scumswish.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .romance3 {
@@ -822,15 +865,17 @@ section {
 }
 
 .thriller .imgCover {
-    background: url('images/thriller.png');
+    background: url('images/thriller.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .thriller1 {
-    background: url('images/monster.png');
+    background: url('images/monster2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .thriller2 {
@@ -840,81 +885,105 @@ section {
 }
 
 .thriller3 {
-    background: url('images/deathnote.png');
+    background: url('images/deathnote.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    @media screen and (max-width: 768px) {
+        background-position: center;
+    }
 }
 
 .thriller4 {
     background: url('images/steinsgate.png');
     background-size: cover;
     background-repeat: no-repeat;
+    @media screen and (max-width: 768px) {
+        background-position: center;
+    }
 }
 
 .thriller5 {
     background: url('images/promisedneverland.png');
     background-size: cover;
     background-repeat: no-repeat;
+    @media screen and (max-width: 768px) {
+        background-position: center;
+    }
 }
 
 .thriller6 {
-    background: url('images/attackontitan.png');
+    background: url('images/attackontitan.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .fantasy .imgCover {
-    background: url('images/fantasy.png');
+    background: url('images/fantasy.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .fantasy1 {
-    background: url('images/madeinabyss.png');
+    background: url('images/madeinabyss.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .fantasy2 {
-    background: url('images/joblessreincarnation.png');
+    background: url('images/joblessreincarnation.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .scifi .imgCover {
-    background: url('images/scifi.png');
+    background: url('images/scifi.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .scifi1 {
-    background: url('images/86.png');
+    background: url('images/86.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .scifi2 {
-    background: url('images/cyberpunk.png');
+    background: url('images/lain.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+}
+
+.scifi3 {
+    background: url('images/cyberpunk.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .sports .imgCover {
-    background: url('images/sports.png');
+    background: url('images/sports.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .sports1 {
-    background: url('images/megalobox.png');
+    background: url('images/megalobox.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .sports2 {
     background: url('images/pingpong.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .healing .imgCover {
@@ -927,10 +996,14 @@ section {
     background: url('images/nonnonbiyori.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .healing2 {
-    background: url('images/222.png');
+    background: url('images/marchcomesin.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    @media screen and (max-width: 768px) {
+        background-position: center;
+    }
 }
