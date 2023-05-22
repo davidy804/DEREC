@@ -48,10 +48,9 @@ section {
     display: -webkit-flex;
     display: flex;
     overflow: hidden;
-
-    @media screen and (max-width: 768px) {
-        flex-direction: column;
-    }
+}
+@media screen and (max-width: 768px) {
+    .flex-container{flex-direction: column;}
 }
 
 .flex-title {
@@ -239,27 +238,6 @@ section {
     background: linear-gradient(#00000080, #00000080), url(images/monster.jpg);
     background-size: cover;
     background-position: center center;
-}
-
-.about {
-    background: linear-gradient(#00000080, #00000080), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/beach-2089959_1280.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-}
-
-.contact2 {
-    background: linear-gradient(#00000080, #00000080), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/lake-696098_1920.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-}
-
-.work {
-    background: linear-gradient(#00000080, #00000080), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/forest-208517_1280.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
 }
 
 .nextPage {
@@ -540,7 +518,6 @@ section {
     position: relative;
     min-width: 15vw;
     height: 15vw;
-    background: #222;
     margin-right: 15px;
     margin-bottom: 15px;
     cursor: pointer;
@@ -712,24 +689,36 @@ section {
     background: url('images/dgrayman.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    @media screen and (max-width: 768px) {
+        background-position: center;
+    }
 }
 
 .shounen6 {
     background: url('images/myhero.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    @media screen and (max-width: 768px) {
+        background-position: center;
+    }
 }
 
 .shoujo .imgCover {
     background: url('images/shoujo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    @media screen and (max-width: 768px) {
+        background-position: center;
+    }
 }
 
 .shoujo1 {
     background: url('images/fruitsbasket.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    @media screen and (max-width: 768px) {
+        background-position: center;
+    }
 }
 
 .shoujo2 {
@@ -768,6 +757,9 @@ section {
     background: url('images/loveiswar.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    @media screen and (max-width: 768px) {
+        background-position: center;
+    }
 }
 
 .drama .imgCover {
@@ -787,6 +779,9 @@ section {
     background: url('images/clannad2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    @media screen and (max-width: 768px) {
+        background-position: center;
+    }
 }
 
 .drama3 {
@@ -802,6 +797,7 @@ section {
     background: url('images/heike.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .episodic .imgCover {
@@ -862,6 +858,9 @@ section {
     background: url('images/snafu.png');
     background-size: cover;
     background-repeat: no-repeat;
+    @media screen and (max-width: 768px) {
+        background-position: center;
+    }
 }
 
 .thriller .imgCover {
@@ -882,6 +881,9 @@ section {
     background: url('images/kaiji.png');
     background-size: cover;
     background-repeat: no-repeat;
+    @media screen and (max-width: 768px) {
+        background-position: center;
+    }
 }
 
 .thriller3 {
