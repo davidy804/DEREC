@@ -49,9 +49,6 @@ section {
     display: flex;
     overflow: hidden;
 }
-@media screen and (max-width: 768px) {
-    .flex-container{flex-direction: column;}
-}
 
 .flex-title {
     color: #FAF9F6;
@@ -66,10 +63,6 @@ section {
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
-
-    @media screen and (max-width: 768px) {
-        transform: rotate(0deg) !important;
-    }
 }
 
 .flex-about {
@@ -91,12 +84,6 @@ section {
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
-
-    @media screen and (max-width: 768px) {
-        padding: 0%;
-        border: 0px solid #f1f1f1;
-        opacity: 1;
-    }
 }
 
 .flex-slide {
@@ -109,22 +96,6 @@ section {
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
-
-    @media screen and (max-width: 768px) {
-        overflow: hidden;
-    }
-}
-
-.flex-slide p {
-    @media screen and (max-width: 768px) {
-        font-size: 3vh;
-    }
-}
-
-.flex-slide ul li {
-    @media screen and (max-width: 768px) {
-        font-size: 3vh;
-    }
 }
 
 .flex-slide:hover {
@@ -161,15 +132,6 @@ section {
     }
 }
 
-.flex-title-home {
-    @media screen and (min-width: 768px) {
-        transform: rotate(-90deg);
-        top: 15%;
-        animation: aboutFlexSlide $defaultSeconds 1;
-        animation-delay: 0s;
-    }
-}
-
 @keyframes homeFlextitle {
     0% {
         transform: rotate(-90deg);
@@ -187,9 +149,17 @@ section {
     }
 }
 
+.flex-title-home {
+    @media screen and (min-width: 768px) {
+        transform: rotate(-90deg);
+        top: 15%;
+        animation: aboutFlexSlide $defaultSeconds 1;
+        animation-delay: 0s;
+    }
+}
+
 .flex-about-home {
     opacity: 0;
-
     @media screen and (min-width: 768px) {
         animation: aboutFlexSlide $defaultSeconds 1;
         animation-delay: 0s;
@@ -341,16 +311,6 @@ section {
     right: 19vw;
     opacity: 0;
     transform: translate(20vw) scale(0);
-
-    @media screen and (max-width: 1279px) {
-        top: 7vh;
-        right: 27vw;
-    }
-
-    @media screen and (max-width: 768px) {
-        top: 25vh;
-        right: 10vw;
-    }
 }
 
 .contact.is-active {
@@ -367,10 +327,6 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    @media screen and (max-width: 768px) {
-        flex-direction: column;
-    }
 }
 
 .contact ul li {
@@ -389,10 +345,6 @@ section {
     font-size: 30px;
     color: #666;
     transition: .5s;
-
-    @media screen and (max-width: 768px) {
-        margin-top: 10px;
-    }
 }
 
 .contact ul li a::before {
@@ -432,10 +384,6 @@ section {
     top: 0;
     left: 0;
     position: absolute;
-
-    @media screen and (max-width: 768px) {
-        height: 240%;
-    }
 }
 
 .sideTitle {
@@ -445,14 +393,6 @@ section {
     height: 100vh;
     width: 20vw;
     color: #222;
-
-    @media screen and (max-width: 768px) {
-        position: relative;
-        margin-top: 15vh;
-        margin-left: 15vw;
-        height: auto;
-        width: 70vw;
-    }
 }
 
 .sideBg {
@@ -472,16 +412,6 @@ section {
     text-align: center;
     font-size: 2em;
     z-index: 2;
-
-    @media screen and (max-width: 1200px) {
-        margin-block: 1vh;
-        font-size: 1.6em;
-    }
-
-    @media screen and (max-width: 768px) {
-        margin-block: 0;
-        font-size: 1.2em;
-    }
 }
 
 .directions {
@@ -491,13 +421,6 @@ section {
     margin-right: 2vw;
     font-size: 1em;
     z-index: 2;
-
-    @media screen and (max-width: 1200px) {
-        font-size: .9em;
-    }
-    @media screen and (max-width: 768px) {
-        font-size: .7em;
-    }
 }
 
 .recContent {
@@ -506,12 +429,6 @@ section {
     margin-top: 20vh;
     display: flex;
     flex-wrap: wrap;
-
-    @media screen and (max-width: 768px) {
-        position: relative;
-        margin-left: 15vw;
-        margin-top: 5vh;
-    }
 }
 
 .genre {
@@ -521,11 +438,6 @@ section {
     margin-right: 15px;
     margin-bottom: 15px;
     cursor: pointer;
-
-    @media screen and (max-width: 768px) {
-        min-width: 70vw;
-        height: 15vh;
-    }
 }
 
 .imgCover:hover {
@@ -555,10 +467,6 @@ section {
     margin: 2vw;
     padding-left: 5px;
     padding-right: 5px;
-
-    @media screen and (max-width: 768px) {
-        font-size: 0.8em;
-    }
 }
 
 .descriptionRec {
@@ -575,10 +483,6 @@ section {
     margin: 2vw;
     padding-left: 5px;
     padding-right: 5px;
-
-    @media screen and (max-width: 768px) {
-        font-size: 0.8em;
-    }
 }
 
 .backdrop {
@@ -611,10 +515,6 @@ section {
     left: 25px;
     font-size: 36px;
     cursor: pointer;
-
-    @media screen and (max-width: 768px) {
-        left: 10px;
-    }
 }
 
 .sidebarTitle {
@@ -623,10 +523,6 @@ section {
     right: 3vw;
     font-weight: 600;
     color: #222;
-
-    @media screen and (max-width: 768px) {
-        font-size: 0.8em;
-    }
 }
 
 .shounenRec,
@@ -645,10 +541,6 @@ section {
     height: 20vh;
     background: #222;
     margin: 2vw;
-
-    @media screen and (max-width: 768px) {
-        min-width: 30vw;
-    }
 }
 
 .shounen .imgCover {
@@ -689,45 +581,36 @@ section {
     background: url('images/dgrayman.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    @media screen and (max-width: 768px) {
-        background-position: center;
-    }
 }
 
 .shounen6 {
     background: url('images/myhero.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    @media screen and (max-width: 768px) {
-        background-position: center;
-    }
+}
+
+.shounen7 {
+    background: url('images/jojo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .shoujo .imgCover {
     background: url('images/shoujo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    @media screen and (max-width: 768px) {
-        background-position: center;
-    }
 }
 
 .shoujo1 {
     background: url('images/fruitsbasket.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    @media screen and (max-width: 768px) {
-        background-position: center;
-    }
 }
 
 .shoujo2 {
     background: url('images/yona.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    @media screen and (max-width: 768px) {
-        background-position: center;
-    }
 }
 
 .comedy .imgCover {
@@ -748,18 +631,12 @@ section {
     background: url('images/asobi.png');
     background-size: cover;
     background-repeat: no-repeat;
-    @media screen and (max-width: 768px) {
-        background-position: center;
-    }
 }
 
 .comedy3 {
     background: url('images/loveiswar.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    @media screen and (max-width: 768px) {
-        background-position: center;
-    }
 }
 
 .drama .imgCover {
@@ -779,18 +656,12 @@ section {
     background: url('images/clannad2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    @media screen and (max-width: 768px) {
-        background-position: center;
-    }
 }
 
 .drama3 {
     background: url('images/haibanerenmei.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    @media screen and (max-width: 768px) {
-        background-position: center;
-    }
 }
 
 .drama4 {
@@ -858,9 +729,6 @@ section {
     background: url('images/snafu.png');
     background-size: cover;
     background-repeat: no-repeat;
-    @media screen and (max-width: 768px) {
-        background-position: center;
-    }
 }
 
 .thriller .imgCover {
@@ -881,36 +749,24 @@ section {
     background: url('images/kaiji.png');
     background-size: cover;
     background-repeat: no-repeat;
-    @media screen and (max-width: 768px) {
-        background-position: center;
-    }
 }
 
 .thriller3 {
     background: url('images/deathnote.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    @media screen and (max-width: 768px) {
-        background-position: center;
-    }
 }
 
 .thriller4 {
     background: url('images/steinsgate.png');
     background-size: cover;
     background-repeat: no-repeat;
-    @media screen and (max-width: 768px) {
-        background-position: center;
-    }
 }
 
 .thriller5 {
     background: url('images/promisedneverland.png');
     background-size: cover;
     background-repeat: no-repeat;
-    @media screen and (max-width: 768px) {
-        background-position: center;
-    }
 }
 
 .thriller6 {
@@ -1005,7 +861,183 @@ section {
     background: url('images/marchcomesin.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    @media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-title {
+        transform: rotate(0deg) !important;
+    }
+
+    .flex-about {
+        padding: 0%;
+        border: 0px solid #f1f1f1;
+        opacity: 1;
+    }
+
+    .flex-slide {
+        overflow: hidden;
+    }
+
+    .flex-slide p {
+        font-size: 3vh;
+    }
+
+    .flex-slide ul li {
+        font-size: 3vh;
+    }
+
+    .contact {
+        top: 25vh;
+        right: 10vw;
+    }
+
+    .contact ul {
+        flex-direction: column;
+    }
+
+    .contact ul li a {
+        margin-top: 10px;
+    }
+
+    .bgGradient {
+        height: 240%;
+    }
+
+    .sideTitle {
+        position: relative;
+        margin-top: 15vh;
+        margin-left: 15vw;
+        height: auto;
+        width: 70vw;
+    }
+
+    .recTitle {
+        margin-block: 0;
+        font-size: 1.2em;
+    }
+
+    .directions {
+        font-size: 0.7em;
+    }
+
+    .recContent {
+        position: relative;
+        margin-left: 15vw;
+        margin-top: 5vh;
+    }
+
+    .genre {
+        min-width: 70vw;
+        height: 15vh;
+    }
+
+    .description {
+        font-size: 0.8em;
+    }
+
+    .descriptionRec {
+        font-size: 0.8em;
+    }
+
+    .sidebar .closebtn {
+        left: 10px;
+    }
+
+    .sidebarTitle {
+        font-size: 0.8em;
+    }
+
+    .shounenRec,
+    .shoujoRec,
+    .comedyRec,
+    .dramaRec,
+    .episodicRec,
+    .romanceRec,
+    .thrillerRec,
+    .fantasyRec,
+    .scifiRec,
+    .sportsRec,
+    .healingRec {
+        min-width: 30vw;
+    }
+
+    .shounen5 {
         background-position: center;
+    }
+
+    .shounen6 {
+        background-position: center;
+    }
+
+    .shoujo .imgCover {
+        background-position: center;
+    }
+
+    .shoujo1 {
+        background-position: center;
+    }
+
+    .shoujo2 {
+        background-position: center;
+    }
+
+    .comedy2 {
+        background-position: center;
+    }
+
+    .comedy3 {
+        background-position: center;
+    }
+
+    .drama2 {
+        background-position: center;
+    }
+
+    .drama3 {
+        background-position: center;
+    }
+
+    .romance3 {
+        background-position: center;
+    }
+
+    .thriller2 {
+        background-position: center;
+    }
+
+    .thriller3 {
+        background-position: center;
+    }
+
+    .thriller4 {
+        background-position: center;
+    }
+
+    .thriller5 {
+        background-position: center;
+    }
+
+    .healing2 {
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .contact {
+        top: 7vh;
+        right: 27vw;
+    }
+
+    .recTitle {
+        margin-block: 1vh;
+        font-size: 1.6em;
+    }
+
+    .directions {
+        font-size: 0.9em;
     }
 }
