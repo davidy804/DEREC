@@ -863,9 +863,33 @@ section {
     background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 1279px) {
+    .contact {
+        top: 7vh;
+        right: 27vw;
+    }
+
+    .recTitle {
+        margin-block: 1vh;
+        font-size: 1.6em;
+    }
+
+    .directions {
+        font-size: 0.9em;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .flex-container {
         flex-direction: column;
+    }
+
+    .flex-title-home {
+        font-size: 4vh;
+    }
+
+    .flex-about-home {
+        color: #ccc;
     }
 
     .flex-title {
@@ -883,13 +907,17 @@ section {
     }
 
     .flex-slide p {
-        font-size: 3vh;
+        font-size: 2vh;
     }
 
     .flex-slide ul li {
         font-size: 3vh;
     }
 
+    .arrow {
+        right: 7vw;
+    }
+    
     .contact {
         top: 25vh;
         right: 10vw;
@@ -921,7 +949,7 @@ section {
     }
 
     .directions {
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
 
     .recContent {
@@ -1023,21 +1051,5 @@ section {
 
     .healing2 {
         background-position: center;
-    }
-}
-
-@media screen and (max-width: 1279px) {
-    .contact {
-        top: 7vh;
-        right: 27vw;
-    }
-
-    .recTitle {
-        margin-block: 1vh;
-        font-size: 1.6em;
-    }
-
-    .directions {
-        font-size: 0.9em;
     }
 }
