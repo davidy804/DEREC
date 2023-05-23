@@ -160,6 +160,7 @@ section {
 
 .flex-about-home {
     opacity: 0;
+
     @media screen and (min-width: 768px) {
         animation: aboutFlexSlide $defaultSeconds 1;
         animation-delay: 0s;
@@ -534,6 +535,7 @@ section {
 .thrillerRec,
 .fantasyRec,
 .scifiRec,
+.mysteryRec,
 .sportsRec,
 .healingRec {
     display: none;
@@ -635,6 +637,12 @@ section {
 
 .comedy3 {
     background: url('images/loveiswar.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.comedy4 {
+    background: url('images/danshi.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -796,6 +804,12 @@ section {
     background-position: center;
 }
 
+.fantasy3 {
+    background: url('images/rezero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .scifi .imgCover {
     background: url('images/scifi.jpg');
     background-size: cover;
@@ -821,6 +835,42 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.scifi4 {
+    background: url('images/timeofeve.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mystery .imgCover {
+    background: url('images/mystery.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mystery1 {
+    background: url('images/shinsekai.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mystery2 {
+    background: url('images/baccano.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mystery3 {
+    background: url('images/oddtaxi.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mystery4 {
+    background: url('images/erased.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .sports .imgCover {
@@ -918,7 +968,7 @@ section {
     .arrow {
         right: 7vw;
     }
-    
+
     .contact {
         top: 25vh;
         right: 10vw;
@@ -933,7 +983,7 @@ section {
     }
 
     .bgGradient {
-        height: 240%;
+        height: 250%;
     }
 
     .sideTitle {
@@ -989,67 +1039,26 @@ section {
     .thrillerRec,
     .fantasyRec,
     .scifiRec,
+    .mysteryRec,
     .sportsRec,
     .healingRec {
         min-width: 30vw;
     }
 
-    .shounen5 {
-        background-position: center;
-    }
-
-    .shounen6 {
-        background-position: center;
-    }
-
-    .shoujo .imgCover {
-        background-position: center;
-    }
-
-    .shoujo1 {
-        background-position: center;
-    }
-
-    .shoujo2 {
-        background-position: center;
-    }
-
-    .comedy2 {
-        background-position: center;
-    }
-
-    .comedy3 {
-        background-position: center;
-    }
-
-    .drama2 {
-        background-position: center;
-    }
-
-    .drama3 {
-        background-position: center;
-    }
-
-    .romance3 {
-        background-position: center;
-    }
-
-    .thriller2 {
-        background-position: center;
-    }
-
-    .thriller3 {
-        background-position: center;
-    }
-
-    .thriller4 {
-        background-position: center;
-    }
-
-    .thriller5 {
-        background-position: center;
-    }
-
+    .shounen5,
+    .shounen6,
+    .shoujo .imgCover,
+    .shoujo1,
+    .shoujo2,
+    .comedy2,
+    .comedy3,
+    .drama2,
+    .drama3,
+    .romance3,
+    .thriller2,
+    .thriller3,
+    .thriller4,
+    .thriller5,
     .healing2 {
         background-position: center;
     }

@@ -69,6 +69,11 @@ $(document).ready(function () {
         $('.recContent, .sideTitle').prop('style', 'filter: blur(3px)');
         $('.backdrop, .scifiRec').show();
     });
+    $('.mystery').click(function () {
+        $('.sidebar').prop('style', 'width: 40vw');
+        $('.recContent, .sideTitle').prop('style', 'filter: blur(3px)');
+        $('.backdrop, .mysteryRec').show();
+    });
     $('.sports').click(function () {
         $('.sidebar').prop('style', 'width: 40vw');
         $('.recContent, .sideTitle').prop('style', 'filter: blur(3px)');
@@ -83,14 +88,14 @@ $(document).ready(function () {
     $('.closebtn').click(function () {
         $('.sidebar').prop('style', 'width: 0');
         $('.recContent, .sideTitle').prop('style', 'filter: none');
-        $('.backdrop, .shounenRec, .shoujoRec, .comedyRec, .dramaRec, .episodicRec, .romanceRec, .thrillerRec, .fantasyRec, .scifiRec, .sportsRec, .healingRec').hide();
+        $('.backdrop, .shounenRec, .shoujoRec, .comedyRec, .dramaRec, .episodicRec, .romanceRec, .thrillerRec, .fantasyRec, .scifiRec, .mysteryRec, .sportsRec, .healingRec').hide();
     });
 
     $(document).mouseup(function (e) {
         if ($(e.target).closest(".sidebar").length === 0) {
             $('.sidebar').prop('style', 'width: 0');
             $('.recContent, .sideTitle').prop('style', 'filter: none');
-            $('.backdrop, .shounenRec, .shoujoRec, .comedyRec, .dramaRec, .episodicRec, .romanceRec, .thrillerRec, .fantasyRec, .scifiRec, .sportsRec, .healingRec').hide();
+            $('.backdrop, .shounenRec, .shoujoRec, .comedyRec, .dramaRec, .episodicRec, .romanceRec, .thrillerRec, .fantasyRec, .scifiRec, .mysteryRec, .sportsRec, .healingRec').hide();
         }
     });
 
