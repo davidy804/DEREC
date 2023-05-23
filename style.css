@@ -889,6 +889,7 @@ section {
     }
 
     .flex-about-home {
+        margin-top: 0.5vh;
         color: #ccc;
     }
 
