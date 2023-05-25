@@ -808,6 +808,7 @@ section {
     background: url('images/rezero.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .scifi .imgCover {
@@ -847,30 +848,35 @@ section {
     background: url('images/mystery.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .mystery1 {
     background: url('images/shinsekai.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .mystery2 {
     background: url('images/baccano.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .mystery3 {
     background: url('images/oddtaxi.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .mystery4 {
     background: url('images/erased.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .sports .imgCover {
@@ -1059,6 +1065,7 @@ section {
     .thriller3,
     .thriller4,
     .thriller5,
+    .scifi4,
     .healing2 {
         background-position: center;
     }
