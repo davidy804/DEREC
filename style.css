@@ -844,6 +844,12 @@ section {
     background-repeat: no-repeat;
 }
 
+.scifi5 {
+    background: url('images/trigun.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .mystery .imgCover {
     background: url('images/mystery.jpg');
     background-size: cover;
@@ -1066,6 +1072,7 @@ section {
     .thriller4,
     .thriller5,
     .scifi4,
+    .scifi5,
     .healing2 {
         background-position: center;
     }
